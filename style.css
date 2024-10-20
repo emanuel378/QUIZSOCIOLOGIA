@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button {
+    cursor:pointer;
+}
+body{
+    background-color: #121214;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #121214;
+    width:90%;
+    max-width: 800px;
+
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.questions-container{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+
+}
+.question{
+    font-size: 29x; /*tamanho da fonte*/
+    font-weight: bold; /*ficar descatado a pergunta*/
+    text-align: center;
+    
+}
+
+.anwers-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 26px; /* Tamanho maior da fonte da pergunta */
+    margin-bottom: 24px;
+    gap: 16px;
+                        }
+.next-question button{
+    margin-top: 32px;
+
+}
+.button{
+    background-color: blueviolet;
+    color :#fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    width: 200px;
+    padding: 0 52px; /*tamanho do espaçamento do botão next e quiz*/
+}
+.button:not(:disabled)hover{
+    filter: brightness(0.8); /*quando clica em cima do botão ele escureçe a cor*/
+
+}
+
+.answer:disabled{
+    cursor:not-allowed
+}
+.hide{
+    display: none;
+}
+
+
+.correct {
+    background-color: #049b48;
+}
+
+.incorrect{
+    background-color: #a10101;
+}
+.final-message{
+    font-size: 20px ;
+    text-align: center;
+}
+
+.final-message span{
+    display:block;
+    margin-top: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    margin: 0; /* Remove margens padrão */
+
+    padding: 0; /* Remove preenchimento padrão */
+    position: relative; /* Necessário para o posicionamento absoluto dos elementos filhos */
+}
+
+/* Contêiner do áudio */
+.audio-container {
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute; /* Permite o posicionamento absoluto */
+    top: 5px; /* Distância do topo da página */
+    right: 5px; /* Distância da borda direita da página */
+}
+
+/* Estilo para a tag de áudio */
+audio {
+    
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 30px; /* Ajuste a altura conforme necessário */
+}
+
+/* styles.css */
+
+/* Estilos para o corpo da página */
+
+/* Estilos para o corpo da página */
+
+ 
+/* Resetando margens e preenchimentos do body */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha ao topo da página */
+    height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+/* Estilo para o título */
+.centered-title {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    font-size: 3em; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    color: violet;/* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 20px 0; /* Margens superior e inferior */
+}
+.imagem-direita {
+    float: right;
+    margin-left: 10px; /* Para adicionar um espaço à esquerda da imagem */
+}
